@@ -65,7 +65,12 @@
         </div>
         <div id="vue-conditionals">
             <h1>Conditionals</h1>
-
+            <button v-on:click="error=!error">Toggle error</button>
+            <button v-on:click="success=!success">Toggle success</button>
+            <p v-if="error">IF : There has been an Error</p>
+            <p v-else-if="success">ELSE IF : Whooo, Success !!!</p>
+            <p v-show="error">SHOW : There has been an Error</p>
+            <p v-show="success">SHOW : Whooo, Success !!!</p>
         </div>
         <script src="app.js"></script>
     </body>

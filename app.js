@@ -110,3 +110,16 @@ new Vue({
         },
     }
 });
+new Vue({
+    el: '#vue-conditionals',
+    data: {
+        success: false,
+        error: false
+    },
+    methods: {
+
+    },
+    computed: {
+        
+    }
+});
