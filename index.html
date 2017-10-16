@@ -72,6 +72,25 @@
             <p v-show="error">SHOW : There has been an Error</p>
             <p v-show="success">SHOW : Whooo, Success !!!</p>
         </div>
+        <div id="vue-boucle-for">
+            <h1>Boucle FOR</h1>
+            {{characters[0]}}
+            {{characters[1]}}
+            <h2>loop</h2>
+            <ul>
+                <li v-for="char in characters">{{char}}</li>
+            </ul>
+            <ul>
+                <li v-for="ninja in ninjas">{{ninja.name}} / {{ninja.age}}</li>
+            </ul>
+            <ul>
+                <li v-for="(ninja, index) in ninjas">{{index}} - {{ninja.name}} / {{ninja.age}}</li>
+            </ul>
+            <div v-for="(ninja, index) in ninjas">
+                <h3>{{index}} - {{ninja.name}}</h3>
+                <p>{{ninja.age}}</p>
+            </div>
+        </div>
         <script src="app.js"></script>
     </body>
 </html>
