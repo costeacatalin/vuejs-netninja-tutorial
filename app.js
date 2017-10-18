@@ -143,3 +143,22 @@ new Vue({
         
     }
 });
+new Vue({
+    el: '#vue-punchbag',
+    data: {
+        name: 'Jack',
+        characters: ['Mario', 'Luigi', 'Yoshi'],
+        ninjas: [
+            {name: 'Ryu', age: 25},
+            {name: 'Yoshi', age: 35},
+            {name: 'Ken', age: 45},
+            {name: 'Toto', age: 55}
+        ]
+    },
+    methods: {
+
+    },
+    computed: {
+        
+    }
+});
